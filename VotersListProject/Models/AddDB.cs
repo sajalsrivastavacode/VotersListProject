@@ -22,6 +22,8 @@ namespace VotersListProject.Models
         public DbSet<VoterModel> votertable { get; set; }
         public DbSet<UpdateRequest> UpdateRequests { get; set; }
 
+        // test
+
 
 
 
