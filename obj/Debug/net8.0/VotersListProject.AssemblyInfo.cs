@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VotersListProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a08b441ec0d1d76ab5cd91ca98bd01dbbc57704")]
 [assembly: System.Reflection.AssemblyProductAttribute("VotersListProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VotersListProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
