@@ -23,8 +23,8 @@
 
         stage('Docker Run') {
             steps {
-                bat 'docker stop voterapp || exit 0'
-                bat 'docker rm voterapp || exit 0'
+                bat 'docker stop voterapp'
+                bat 'docker rm voterapp'
                 bat 'docker run -d -p 8081:8080 --name voterapp voterslistproject'
             }
         }
