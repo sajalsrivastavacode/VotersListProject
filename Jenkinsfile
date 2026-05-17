@@ -20,5 +20,13 @@
                 bat 'docker build -t voterslistproject .'
             }
         }
+
+        stage('Docker Run') {
+            steps {
+                bat 'docker stop voterapp || exit 0'
+                bat 'docker rm voterapp || exit 0'
+                bat 'docker run -d -p 8081:8080 --name voterapp voterslistproject'
+            }
+        }
     }
 }
