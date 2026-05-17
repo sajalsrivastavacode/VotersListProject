@@ -5,21 +5,21 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'dotnet build'
+                sh 'dotnet build'
             }
         }
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t voterslistproject .'
+                sh 'docker build -t voterslistproject .'
             }
         }
 
         stage('Docker Run') {
             steps {
-                bat 'docker stop voterapp || exit 0'
-                bat 'docker rm voterapp || exit 0'
-                bat 'docker run -d -p 8081:8080 --name voterapp voterslistproject'
+                sh 'docker stop voterapp || true'
+                sh 'docker rm voterapp || true'
+                sh 'docker run -d -p 8081:8080 --name voterapp voterslistproject'
             }
         }
     }
