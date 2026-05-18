@@ -1,11 +1,15 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "/usr/local/bin:/usr/bin:/bin:${PATH}"
+    }
+
     stages {
 
         stage('Build') {
             steps {
-                sh 'dotnet build'
+                sh '/usr/local/bin/dotnet build'
             }
         }
 
